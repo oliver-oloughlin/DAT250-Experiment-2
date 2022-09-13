@@ -11,7 +11,7 @@ public class Address {
     private Long id;
     private String street;
     private Integer number;
-    @ManyToMany
+    @ManyToMany(mappedBy = "addresses")
     private Set<Person> owners;
 
     public String getStreet() {
